@@ -7,7 +7,7 @@
 		height: 100%;
 		width: 100%;
 		display: block;
-		background-color:#333;
+		background-color:darkgreen;
 		padding:5vw 5vw;
 		text-align: center;
 		position:relative;
@@ -22,6 +22,7 @@
 			top:0;
 			left:0;
 			color:gold;
+			text-shadow: 1px 1px 5px black;
 
 			button[ion-button]{
 				padding:1vh;
@@ -31,6 +32,10 @@
 				margin-left: 5vh;
 				background-color:crimson;
 				color:#ddd;
+				text-shadow: 1px 1px 5px black;
+				&.yelo{
+					background-color:gold;
+				}
 			}
 		}
 
@@ -39,7 +44,11 @@
 			width: 100%;
 			position: relative;
 			display: inline-block;
-			background-color:lightgray;
+			background-image:url("../../../assets/christmasred.jpg");
+			background-size:cover;
+			background-repeat:no-repeat;
+			background-position:center;
+			border-radius:8px;
 
 			app-bingo-number{
 				cursor: pointer;

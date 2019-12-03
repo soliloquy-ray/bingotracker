@@ -1,1 +1,38 @@
+:host{
+	overflow:hidden;
+	width:100vw;
+	height:100vh;
+	background: radial-gradient(farthest-corner at 30vw 20vh,#7397a1 1%,#3f2c41 100%);
+	$s1:"";
+	@for $i from 1 through 400 {
+	    $s1: $s1 + random(1000)*0.1vw + " " + random(1000)*0.1vh + " " + 0 + " " + random(50)*-0.01rem + #fff;
+	    @if $i < 400 {
+	        $s1: $s1 + ",";
+	    }
+	}
+	.snow {
+	    border-radius: 50%;
+	    opacity: 0.8;
+	    position: absolute;
+	    top:-100vh;
+	    animation-name: fall;
+	    animation-timing-function: linear;
+	    animation-iteration-count: infinite;
+	}
+	.layer1 {
+	    width: 0.5rem;
+	    height: 0.5rem;
+	    filter:blur(1.5px);
+	    box-shadow: #{$s1};
+	    animation-duration: 6s;
+	}
+	.layer1.a {
+	    animation-delay: -3s;
+	}
 
+	@keyframes fall {
+	    100% {transform: translateY(100vh); }
+	}
+
+
+}

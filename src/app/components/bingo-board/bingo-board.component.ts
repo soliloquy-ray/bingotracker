@@ -67,4 +67,26 @@ export class BingoBoardComponent implements OnInit {
   	this.maps[val-1].toggleValue();
   }
 
+   reset(){
+    let self = this;
+    let al = this.alert.create({
+      message:"Are you sure you want to start a new game?",
+      buttons:[
+      {
+        text:"Yes",
+        handler:(v)=>{
+         location.reload();
+        }    
+      },
+      {
+        text:"No",
+        role:'cancel'
+      }
+      ]
+    });
+    al.then(a=>{
+      a.present();
+    })
+   }
+
 }
