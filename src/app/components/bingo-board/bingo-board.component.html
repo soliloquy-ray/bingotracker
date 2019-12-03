@@ -1,0 +1,6 @@
+<div class="container">
+	<p>Bingo Time!<button ion-button (click)="roll()">Number</button></p>
+	<div class="inner-board">
+		<app-bingo-number [number]="n.i" *ngFor="let n of elems; let index = i" [id]="'b'+n.i" (click)="addNumber(n.i)"></app-bingo-number>
+	</div>
+</div>

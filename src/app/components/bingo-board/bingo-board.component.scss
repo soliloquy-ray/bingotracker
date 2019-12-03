@@ -1,0 +1,49 @@
+:host{
+	display: block;
+	height: 100%;
+	width:100%;
+
+	div.container{
+		height: 100%;
+		width: 100%;
+		display: block;
+		background-color:#333;
+		padding:5vw 5vw;
+		text-align: center;
+		position:relative;
+
+		p{
+			margin:0;
+			font-size: 5vh;
+			position:absolute;
+			width: 100%;
+			text-align: left;
+			text-indent: 5vh;
+			top:0;
+			left:0;
+			color:gold;
+
+			button[ion-button]{
+				padding:1vh;
+				font-size: 4vh;
+				border-radius: 8px;
+				display: inline-block;
+				margin-left: 5vh;
+				background-color:crimson;
+				color:#ddd;
+			}
+		}
+
+		.inner-board{
+			height: 100%;
+			width: 100%;
+			position: relative;
+			display: inline-block;
+			background-color:lightgray;
+
+			app-bingo-number{
+				cursor: pointer;
+			}
+		}
+	}
+}
