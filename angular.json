@@ -31,7 +31,9 @@
                 "output": "./svg"
               },
               {
-                "input":"src/_redirects"
+                "glob":"_redirects",
+                "input":"src",
+                "output": "assets"
               }
             ],
             "styles": [
