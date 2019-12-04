@@ -34,13 +34,14 @@ export class BingoBoardComponent implements OnInit {
   			{
   				name:"number",
   				type:"number",
+          id:"n22",
   				min:1,
   				max:75
   			}
   		],
   		buttons:[
   		{
-  			text:"Input",
+  			text:"Pick",
   			handler:(v)=>{
   				self.addNumber(v.number);
   			}		
@@ -48,7 +49,9 @@ export class BingoBoardComponent implements OnInit {
   		]
   	});
   	al.then(a=>{
-  		a.present();
+  		a.present().then(a=>{
+        document.getElementById('n22').focus();
+      });
   	})
   }
 

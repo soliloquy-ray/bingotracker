@@ -36,3 +36,18 @@
 * {
 	font-family: 'bingo';
 }
+
+ion-alert div.alert-wrapper{
+	background-image: url("assets/christmasred.jpg") !important;
+    background-size: cover !important;
+
+    &>div[class^=alert-]{
+    	color:#fff;
+    	text-shadow: 1px 1px 5px gold;
+    	button span, input{	    		
+	    	color:#fff;
+	    	text-shadow: 1px 1px 5px gold;
+    	}
+    }
+
+}
