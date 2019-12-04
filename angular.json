@@ -33,7 +33,7 @@
               {
                 "glob":"_redirects",
                 "input":"src",
-                "output": "assets/_redirects"
+                "output": "www/_redirects"
               }
             ],
             "styles": [
@@ -45,9 +45,6 @@
               }
             ],
             "scripts": [
-              {
-                "input":"src/_redirects"
-              }
             ]
           },
           "configurations": {
